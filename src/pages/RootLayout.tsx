@@ -1,10 +1,14 @@
 import { Outlet } from "react-router-dom";
-import "../assets/styles/globals.scss";
+import "../assets/styles/index.css";
+import AppHeader from "../components/app-header";
 
 const RootLayout = () => {
   return (
     <>
-      <Outlet />
+      <AppHeader />
+      <main>
+        <Outlet />
+      </main>
     </>
   );
 };

@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+* {
+  box-sizing: border-box;
+  outline: none !important;
+  font-family: "Jost", sans-serif;
+  margin: 0;
+  padding: 0;
+}
