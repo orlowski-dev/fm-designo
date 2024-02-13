@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .designs-section {
+    @apply grid gap-6 lg:gap-8 lg:grid-cols-2 lg:grid-rows-2;
+  }
+  .designs-section_card {
+    @apply relative h-[250px] md:h-[250px] rounded-2xl overflow-hidden bg-no-repeat bg-cover text-white;
+  }
+  .designs-section_card_content {
+    @apply absolute z-20 inset-0 flex items-center justify-center flex-col gap-3;
+  }
+  .designs-section_card_hover {
+    @apply absolute inset-0 bg-black bg-opacity-50 transition-colors z-10;
+  }
+
+  .designs-section_card:hover .designs-section_card_hover {
+    @apply bg-peach bg-opacity-50;
+  }
+  .designs-section_card.web-design {
+    @apply bg-[url('../../../assets/home/mobile/image-web-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-web-design.jpg')] lg:bg-[url('../../../assets/home/desktop/image-web-design-large.jpg')] lg:row-span-2 lg:h-[640px];
+  }
+  .designs-section_card.app-design {
+    @apply bg-[url('../../../assets/home/mobile/image-app-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-app-design.jpg')] lg:md:bg-[url('../../../assets/home/desktop/image-app-design.jpg')] lg:h-full;
+  }
+  .designs-section_card.graphic-design {
+    @apply bg-[url('../../../assets/home/mobile/image-graphic-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-graphic-design.jpg')] lg:bg-[url('../../../assets/home/desktop/image-graphic-design.jpg')] lg:h-full;
+  }
+}

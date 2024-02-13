@@ -48,6 +48,9 @@ export default {
       height: {
         "mobile-menu": "calc(100vh - 4.6875rem)",
       },
+      borderWidth: {
+        1: "1px",
+      },
     },
   },
   plugins: [],

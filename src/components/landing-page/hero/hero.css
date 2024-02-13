@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .hero-home {
+    @apply bg-peach text-white pb-[450px] lg:py-36;
+  }
+  .hero-home {
+    background-image: url("../../../assets/home/desktop/image-hero-phone.png"),
+      url("../../../assets/home/desktop/bg-pattern-hero-home.svg");
+    background-repeat: no-repeat;
+    background-position: center 320px, left center;
+  }
+  .hero-home--md {
+    background-position: center 360px, right -60px center;
+  }
+  .hero-home--lg {
+    background-position: right -80px top -20px, right top;
+  }
+  .hero-home_content {
+    @apply px-6 pt-20 grid gap-4 md:gap-6 max-w-[540px] mx-auto text-center lg:text-left lg:pt-0 lg:px-0 lg:mx-24;
+  }
+}

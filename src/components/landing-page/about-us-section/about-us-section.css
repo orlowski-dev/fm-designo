@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .about-us-section {
+    @apply grid gap-16 lg:grid-cols-3 lg:gap-4 mb-28;
+  }
+  .about-us-section_card {
+    @apply grid gap-6 items-center text-center md:grid-cols-[202px_auto] md:gap-16 md:text-left lg:grid-cols-1 lg:text-center;
+  }
+  .about-us-section_card_title {
+    @apply text-h3 uppercase max-w-[370px] mx-auto md:mx-0 md:max-w-full;
+  }
+  .about-us-section_card_desc {
+    @apply text-body max-w-[370px] mx-auto md:mx-0 md:max-w-full;
+  }
+  .about-us-section_card_illustration {
+    @apply flex items-center justify-center w-[202px] h-[202px] mx-auto bg-[url('../../../assets/home/desktop/bg-pattern-hero-home.svg')] bg-no-repeat md:mx-0 lg:mx-auto;
+  }
+  .about-us-section_card_illustration {
+    background-position: center;
+    background-size: 202px;
+  }
+}

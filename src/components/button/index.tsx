@@ -1,4 +1,8 @@
-import type { ReactNode } from "react";
+import type {
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  ReactNode,
+} from "react";
 import "./button.css";
 
 export interface ButtonProps {
@@ -6,8 +10,26 @@ export interface ButtonProps {
   variant?: "light" | "dark";
 }
 
-const Button = ({ variant, children }: ButtonProps) => {
-  return <button className={`button ${variant ?? "light"}`}>{children}</button>;
+export const Button = ({
+  variant,
+  children,
+  ...other
+}: ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>) => {
+  return (
+    <button className={`button ${variant ?? "light"}`} {...other}>
+      {children}
+    </button>
+  );
 };
 
-export default Button;
+export const LinkButton = ({
+  variant,
+  children,
+  ...other
+}: ButtonProps & AnchorHTMLAttributes<HTMLAnchorElement>) => {
+  return (
+    <a className={`button ${variant ?? "light"}`} {...other}>
+      {children}
+    </a>
+  );
+};

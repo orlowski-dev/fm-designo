@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .invite-to-contact-section {
+    @apply bg-peach rounded-2xl px-6 py-16  text-center text-white space-y-6 lg:flex items-center justify-between lg:p-24 lg:text-left;
+  }
+
+  .invite-to-contact-section {
+    background-image: url("../../../assets/shared/desktop/bg-pattern-call-to-action.svg");
+    background-repeat: no-repeat;
+    background-position: right -400px top -100px;
+  }
+
+  .invite-to-contact-section--md {
+    background-position: right -130px top -30px;
+    background-size: auto 130%;
+  }
+
+  .invite-to-contact-section--lg {
+    background-size: auto 160%;
+    background-position: right top -100px;
+  }
+}

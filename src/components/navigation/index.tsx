@@ -2,6 +2,7 @@ import type { Variants } from "framer-motion";
 import { useEffect, useId, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { motion } from "framer-motion";
+import navLinks from "./navLinks";
 
 const menuBgVarianst: Variants = {
   open: {
@@ -30,12 +31,6 @@ const navLinkAnimVariants: Variants = {
     transition: { duration: 0.13 },
   },
 };
-
-const navLinks = [
-  { link: "/our-company", pageName: "Our company" },
-  { link: "/locations", pageName: "Locations" },
-  { link: "/contact", pageName: "Contact" },
-];
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
