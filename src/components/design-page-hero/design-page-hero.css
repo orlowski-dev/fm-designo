@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .design-page-hero-section {
+    @apply min-h-[320px] md:min-h-[252px] md:rounded-xl flex items-center justify-center flex-col text-center bg-peach text-white space-y-4;
+  }
+  .design-page-hero-section {
+    background-image: url("../../assets/web-design/desktop/bg-pattern-intro-web.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+
+  .design-page-hero-section--md {
+    background-position: right -150px top -164px;
+  }
+
+  .design-page-hero-section--lg {
+    background-position: right top -164px;
+  }
+
+  .design-page-hero-section_title {
+    @apply text-h2;
+  }
+  .design-page-hero-section_desc {
+    @apply max-w-[400px];
+  }
+}

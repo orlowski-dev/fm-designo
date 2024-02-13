@@ -19,8 +19,13 @@
   .designs-section_card:hover .designs-section_card_hover {
     @apply bg-peach bg-opacity-50;
   }
+
+  .designs-section .designs-section_card:first-child {
+    @apply lg:h-[640px] lg:row-span-2;
+  }
+
   .designs-section_card.web-design {
-    @apply bg-[url('../../../assets/home/mobile/image-web-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-web-design.jpg')] lg:bg-[url('../../../assets/home/desktop/image-web-design-large.jpg')] lg:row-span-2 lg:h-[640px];
+    @apply bg-[url('../../../assets/home/mobile/image-web-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-web-design.jpg')] lg:bg-[url('../../../assets/home/desktop/image-web-design-large.jpg')] lg:h-full;
   }
   .designs-section_card.app-design {
     @apply bg-[url('../../../assets/home/mobile/image-app-design.jpg')] md:bg-[url('../../../assets/home/tablet/image-app-design.jpg')] lg:md:bg-[url('../../../assets/home/desktop/image-app-design.jpg')] lg:h-full;
