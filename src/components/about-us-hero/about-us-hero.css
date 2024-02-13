@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .about-us-hero {
+    @apply text-white bg-peach md:rounded-xl overflow-hidden lg:grid grid-cols-[auto_476px];
+  }
+
+  .about-us-hero_content {
+    @apply text-center px-6 py-20 space-y-6 md:px-10 lg:h-[480px] lg:flex lg:flex-col lg:items-start lg:justify-center lg:text-left;
+  }
+
+  .about-us-hero_content {
+    background-image: url("../../assets/about/mobile/bg-pattern-hero-about-mobile.svg");
+    background-position: right top -130px;
+    background-repeat: no-repeat;
+    grid-column: 1 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .about-us-hero_image-area {
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+  }
+
+  .about-us-hero_content--md {
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position: left -100px top -430px;
+  }
+
+  .about-us-hero_content--md {
+    background-position: right bottom;
+  }
+}
